@@ -42,14 +42,12 @@
 
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- Indicators/dots -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
       
-        <!-- The slideshow/carousel -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="assets/carrusel.webp" alt="Los Angeles" class="d-block w-70 h-5">
@@ -62,7 +60,6 @@
           </div>
         </div>
       
-        <!-- Left and right controls/icons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
@@ -73,10 +70,22 @@
       
 </head>
 <body>
+    <p></p>
+
     <h1>Productos destacados </h1>
     <p></p>
     <p></p>
-    <div class="card" style="width:200px">
+
+    <div class="card;d-flex flex-row" style="width:200px">
+      <img class="card-img-top" src="assets/macetero.jpg" alt="macetero">
+      <div class="card-body; p-8">
+        <h6 class="card-title">macetero con forma de groot</h6>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-success">Ver producto</a>
+      </div>
+    </div>
+
+    <div class="card; mx-auto" style="width:200px">
       <img class="card-img-top" src="assets/macetero.jpg" alt="macetero">
       <div class="card-body">
         <h6 class="card-title">macetero con forma de groot</h6>
@@ -85,5 +94,32 @@
       </div>
     </div>
 
+    <footer class="bg-dark text-white">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="assets/logo.jpg" alt="Logo de tu jardin" width="100px" height="100px">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>SOBRE NOSOTROS</h2>
+              <a href="quienessomos.html"> Quienes Somos</a>
+          </div>
+          <div class="box">
+              <h2>SIGUENOS</h2>
+              <div class="red-social">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+              </div>
+          </div>
+      </div>
+      <div class="grupo-2">
+          <small>&copy; 2021 <b>tu jardin</b> - Todos los Derechos Reservados.</small>
+      </div>
+  </footer>
 </body>
 </html>
