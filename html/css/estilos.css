@@ -1,0 +1,14 @@
+.card-body img {
+    height: 80px;
+}
+
+.carousel-item img {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+}
+.carousel-inner {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: rgba(76, 167, 76, 0.4);
+}
