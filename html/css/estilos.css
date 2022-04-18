@@ -1,12 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap%27');
 
+.link{
+    font-size:medium;
+    text-decoration: none;
+    text-align: left;
+}
+
 .card-body img {
     height: 150px;
 }
 
 .row{
     text-align: center;
+}
+
+.row img{
+    margin: 0 auto;
+    height: 200px;
+    width: 225px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 .card-body{
   padding: 10px;
