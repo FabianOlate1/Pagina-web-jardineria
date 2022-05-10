@@ -21,6 +21,28 @@
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/logo.jpg" class="rounded-circle" height="80em"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Volver al inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Mi cuenta</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="ingresar.html">Ingresar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
     <div class="row">
         <a href="index.html">
             <img src="assets/logo.jpg" alt="logo" class="rounded-circle">
@@ -31,7 +53,7 @@
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8 p-3 border mt-3 rounded shadow">
-                <form action="registro.html" method="get">
+                <form action="registro.html" method="post">
                     <h4>Registro</h4>
 
                       <div class="mb-3 mt-3">
@@ -53,24 +75,6 @@
                         <label for="pass" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" id="psw" name="pass" placeholder="ingrese password" required>
                       </div>
-
-                      <div class="mb-3 mt-3">
-                        <label for="comuna" class="form-label">Comuna</label>
-                        <select class="form-select" name="comuna">
-                            <option>Concepción</option>
-                            <option>Chiguayante</option>
-                            <option selected>Talcahuano</option>
-                            <option>Hualpen</option>
-                          </select>
-                      </div>
-
-                      <div class="mb-3 mt-3">
-                        <label for="comuna" class="form-label">Sexo</label>
-                        <select class="form-select" name="comuna">
-                            <option>Masculino</option>
-                            <option>Femenino</option>
-                          </select>
-                      </div>
                      
                    
 
@@ -84,11 +88,6 @@
                         
                 </form>
                    
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-
-    
     </div>
 </body>
 </html>
