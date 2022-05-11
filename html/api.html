@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapa</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="assets/logo.jpg" class="rounded-circle" height="80em"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Suscribirse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Mi cuenta</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Busqueda">
+              <button class="btn btn-success" type="button">Buscar</button>
+            </form>
+            <a class="navbar_brand" href="Ingresar.html"><img src="assets/login.png" class="mx-auto " height="45em">
+            </a>
+            <a class="navbar_brand" href="carrito.html"><img src="assets/cart.png" class="mx-auto " height="45em">
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    <div id="map"></div>
+
+    <style>
+
+      #map{
+        height: 80%;
+      }
+      html,
+      body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <script>
+
+      const mapdiv = document.getElementById("map");
+      let map
+      function initMap() {
+      map = new google.maps.Map(mapdiv,{
+      center: {lat:-36.794690001413656 ,lng: -73.06115866931232},
+      zoom : 10
+
+  });
+}
+    </script>
+
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyhaBGBZV2N7tBM2_FJHDhB3D5qIBTwA8&callback=initMap">
+    </script>
+
+</body>
+</html>
